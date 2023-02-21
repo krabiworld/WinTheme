@@ -1,6 +1,6 @@
 ﻿# WinTheme
 
-Simple utility to change theme on not activated Windows.
+Simple utility to changing system theme in not activated Windows.
 
 ## Build and run
 1. Install [.NET 7](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
