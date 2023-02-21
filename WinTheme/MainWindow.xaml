@@ -5,12 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="WinTheme" Height="200" Width="200">
+        Title="WinTheme" Height="400" Width="400">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock>Theme</TextBlock>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100px"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock>Apps Theme</TextBlock>
+            <StackPanel Grid.Row="1" Grid.Column="0">
+                <RadioButton Name="LightAppsButton" Click="ChangeAppsTheme">Light</RadioButton>
+                <RadioButton Name="DarkAppsButton" Click="ChangeAppsTheme">Dark</RadioButton>
+            </StackPanel>
         
-        <RadioButton Name="LightButton" Click="ChangeTheme">Light</RadioButton>
-        <RadioButton Name="DarkButton" Click="ChangeTheme">Dark</RadioButton>
+            <TextBlock Grid.Row="0" Grid.Column="1">System Theme</TextBlock>
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <RadioButton Name="LightSystemButton" Click="ChangeSystemTheme">Light</RadioButton>
+                <RadioButton Name="DarkSystemButton" Click="ChangeSystemTheme">Dark</RadioButton>
+            </StackPanel>
+        </Grid>
         
         <CheckBox Name="TransparencyButton" Click="ChangeTransparency">Transparency</CheckBox>
     </StackPanel>
