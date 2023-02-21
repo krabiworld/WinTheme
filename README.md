@@ -7,4 +7,4 @@ Simple utility to changing system theme in not activated Windows.
 2. Clone repository
 3. Change directory: `cd .\WinTheme\WinTheme`
 4. To run app: `dotnet run`
-5. To build app: `dotnet build`, in `WinTheme\WinTheme\bin\Debug\net7.0-windows` run `WinTheme.exe`
+5. To build app: `dotnet build`, in `.\bin\Debug\net7.0-windows` run `WinTheme.exe`
